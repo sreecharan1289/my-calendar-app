@@ -1,0 +1,81 @@
+/* components/Calendar.css */
+.calendar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.days-row {
+  display: flex;
+}
+
+.day-name {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  min-height: 100px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  position: relative;
+}
+
+.cell.disabled {
+  background-color: #f9f9f9;
+  color: #ccc;
+}
+
+.cell.today {
+  background-color: #e6f7ff;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.events {
+  margin-top: 5px;
+}
+/* Add to Calendar.css */
+.cell {
+  position: relative;
+}
+
+.event-item.dragging {
+  opacity: 0.5;
+}
+
+.cell.drop-target {
+  background-color: #f0fff0;
+}
