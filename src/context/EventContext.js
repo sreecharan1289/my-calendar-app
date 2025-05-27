@@ -1,6 +1,6 @@
 // src/context/EventContext.js
 import { createContext, useState, useEffect } from 'react';
-import { format, addDays, addWeeks, addMonths } from 'date-fns'; // Removed parseISO as it's not used here
+import { addDays, addWeeks, addMonths } from 'date-fns'; // Removed parseISO as it's not used here
 
 export const EventContext = createContext();
 
